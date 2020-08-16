@@ -13,6 +13,9 @@ func main() {
   //  https://www.smslink.ro/get-api-key/
   //
 
+  //  HTTPS API Endpoint:  https://secure.smslink.ro/sms/gateway/communicate/index.php
+  //  HTTP API Endpoint:   http://www.smslink.ro/sms/gateway/communicate/index.php
+
 	url := "https://secure.smslink.ro/sms/gateway/communicate/index.php?connection_id=MyConnectionID&password=MyConnectionPassword&to=07xyzzzzzz&message=TestMessage"
 
 	req, _ := http.NewRequest("GET", url, nil)
